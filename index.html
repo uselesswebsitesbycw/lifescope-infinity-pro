@@ -5,24 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LifeScope Infinity Ultimate</title>
   
-  <!-- Fonts & Styles -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Libraries -->
+  <!-- JS Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-  
+
   <!-- Welcome Screen -->
   <div id="welcome-screen" class="welcome-screen">
-    <p></p>
-    <div class="buttons">
-      <button id="start-tracking">Start Tracking</button>
-      <button id="demo-mode">Demo Mode</button>
+    <div class="welcome-content">
+      <h1>LifeScope Infinity Ultimate</h1>
+      <p>Track every aspect of your life, health, work, creativity, and fun. Click "Start Tracking" to begin your journey!</p>
+      <div class="buttons">
+        <button id="start-tracking">Start Tracking</button>
+        <button id="demo-mode">Demo Mode</button>
+      </div>
     </div>
   </div>
 
@@ -40,12 +45,13 @@
       <button id="export-png">Export PNG</button>
       <button id="reset-dashboard">Reset Dashboard</button>
     </div>
+
     <div id="cards-container" class="cards-container"></div>
-    <h2>Challenges</h2>
+
+    <h2 class="challenges-title">Challenges</h2>
     <ul id="challenges-list" class="challenges-list"></ul>
   </div>
 
-  <!-- Script -->
   <script src="script.js"></script>
 </body>
 </html>
